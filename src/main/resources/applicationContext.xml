@@ -26,12 +26,7 @@
 		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 	</bean>
 	
-<!--  <mongo:repositories base-package="com.bookstore.repository">
-    <mongo:repository id="bookRepository" mongo-template-ref="mongoTemplate"/>
-   
-</mongo:repositories>
--->
-
+ <mongo:repositories base-package="com.bookstore.repository"></mongo:repositories>
 <bean id="bookservice" class="com.bookstore.service.BookService" />
 		
 	

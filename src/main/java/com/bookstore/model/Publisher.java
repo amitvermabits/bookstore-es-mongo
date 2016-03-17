@@ -42,6 +42,12 @@ public class Publisher {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "[name:" + name + ",id :" + id + ",country:" + country + "]";
+	}
 
 
 }

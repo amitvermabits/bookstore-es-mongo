@@ -2,16 +2,18 @@ package com.bookstore.repository;
 
 import java.math.BigInteger;
 
-import org.springframework.data.repository.Repository;
-
+import org.springframework.data.mongodb.repository.Query;
+import org.springframework.data.repository.CrudRepository;
 import com.bookstore.model.Book;
 
 
 
 
-public interface BookRepository extends Repository<Book, BigInteger>{
+
+public interface BookRepository extends CrudRepository<Book, Integer>{
 	
-	 public Book findByName(String name);
+	@Query("{'name' : ?0}")
+	public Iterable<Book> searchByName(String bookName);
 	
 } 
 
