@@ -11,22 +11,24 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>3.2.2.RELEASE</spring.version>
 
 	</properties>
 
 
 
+
+
 	<dependencies>
 
-<!-- Jersey -->
+		<!-- Jersey -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 
 		<!-- Spring framework -->
 		<dependency>
@@ -52,6 +54,27 @@
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<dependency>
+
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-config</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
 
 
 		<!-- Jersey + Spring -->
